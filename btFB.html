@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        max-width: 8%;
+    }
+    .row_flex {
+        display: flex;
+    }
+    .flex_column {
+        flex-direction: column;
+    }
+    .header {
+        justify-content: space-between;
+        background-color: royalblue;
+        padding: 0 1rem;
+        height: 5rem;
+    
+    }
+    .header .logo{
+        color: white;
+        align-self: center;
+    }
+    .header .account {
+        gap: 1rem;
+        align-self: center;
+        color: white;
+        
+    }
+    .header .button{
+        align-self: center;
+        color: white;
+    }
+    .header .logo img {
+        max-width: 100px;
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1 rem;
+        gap: 1rem;
+    }
+    .main ul{
+        list-style-type: none;
+        margin-top: 4rem;
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        box-sizing: border-box;
+    }
+    .main ul li{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    .main .left{
+        width: 50%;
+        box-sizing: border-box;
+        
+    }
+    .main .left .text_1{
+        margin-top: 3.5rem;
+        margin-left: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .main .left ul li>p{
+        font-weight: bold;
+    }
+    .main .right {
+        width: 50%;
+        padding-top: 2rem;
+        flex: 1.3em;
+        justify-items: end;
+    }
+    .main .right .text_2 {
+
+    }
+    .main .right .form{
+        font-size: 1rem;
+        gap:0.5rem
+
+    }
+    main .right input{
+        border: 2px solid;
+        width: 100%;
+        height: 20px;
+    }
+    .main .right .form .button2 button {
+        background-color:green
+    }
+    @media screen and (max-width:420px) {
+        .header {
+            flex-direction: column;
+        }
+        .main {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="header row_flex">
+        <div class="logo">
+            <h2>FaceBook</h2>
+        </div>
+        <div class="account row_flex">
+            <div class="row_flex flex_column">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <div class="tick">
+                    <input type="checkbox" name="" id="">
+                    <span>Keeping me logged in</span>
+                </div>
+            </div>
+            <div class="row_flex flex_column">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass"> 
+                <span>Forgot your password?</span>
+            </div>
+            <div class="button">
+                <button onclick="">Log in</button>
+            </div>
+        </div>
+    </div>
+    <div class="main row_flex">  
+        <div class="left">
+            <div class="text_1">
+                <h3>
+                    Connect with friends and the word around you on FaceBook
+                </h3>
+            </div>
+            <ul>
+                <li>
+                        <img src="" alt="">
+                        <p>See photos and updates</p>
+                        <span>form friend in News Feed</span>
+                </li>
+                <li>
+                        <img src="" alt="">
+                        <p >Share what's new</p>
+                        <span>in your life on your Timline</span>
+                    </li>
+                <li>
+                        <img src="" alt="">
+                        <p>Find more</p>
+                        <span>what you're looking for with Graph Search</span>
+                    </li>
+            </ul>    
+        </div>           
+        <div class="right">
+            <div class="text_2">
+                <h2>Sign Up</h2>
+                <span>it's free and alway will be</span>
+            </div>
+            <div class="form flex-direction">
+                <div class="name row_flex">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <input type="text" placeholder="Email and mobile">
+                <input type="text" placeholder="Re-enter email of mobile number">
+                <input type="text" placeholder="New password">
+                <div class="birthday row_flex">
+                    <span>Birthday</span>
+                    <select name="month" id="">
+                        <option>month</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                    <select name="day" id=""></select>
+                    <select name="years" id=""></select>              
+                </div>
+                <input name="gioitinh" type="radio" value="Male">Male
+                <input name="gioitinh" type="radio" value="Female">Female
+                <p>By clicking Sign Up, you agree to our Terms and that you have read our Data use Policy.</p>
+                <div class="button2">
+                    <button type="submit" value="submit">Sign UP</button>
+                </div>
+            </div>
+        </div>
+        <div class=""></div>
+        </div>
+    </div>   
+</body>
+</html>

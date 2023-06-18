@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0
+        padding: 0
+    }
+    .row_flex{
+        display: flex;
+    }
+    .column_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        max-width: 40px;
+    }
+    button{
+        border: 1px brown;
+        border-radius: 5px;
+        background-color: brown;
+        padding: 10px;
+        margin: 17px;
+        color: white;        
+    }
+    body {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .header .title{
+        text-align: center;
+        color: brown;
+    }
+    .header .menu ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-bottom: 1.25rem;
+        margin-left: 1.5rem;
+    }
+    .header .menu ul li{
+        display: block;
+        font-size: 10px;
+        padding: 0.3rem;
+        margin: 0.4rem;
+    }
+    .course {
+        justify-content: ;
+        border: 1px solid;
+        border-radius: 6px;
+    }
+    .main {
+        gap: 1rem;
+    }
+    .time {
+        flex: 1;
+        justify-content: space-evenly;
+        background-color: brown;
+        color: white;
+    }
+    .lop {
+        flex: 2;
+        justify-content:space-evenly ;
+        padding: 1.2rem;
+        align-self: center;
+    }
+    .block_title {
+        display: flex;
+        align-items: center;
+        flex: 2;
+        gap: 0.2rem;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="title">
+            <img src="/logo-2.png" alt="">
+            <h2>Lịch khai giảng</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>KHOÁ HỌC LẬP TRÌNH</li>
+                <li>KHOÁ HỌC THIẾT KẾ</li>
+                <li>KHOÁ HỌC CHUYÊN SÂU</li>
+                <li>KHOÁ HỌC KHÁC</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main column_flex">
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/tester.jpg">
+                    <h4>Kiểm thử phần mềm</h4>
+                </div>                
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/JV-logo-1.jpg">
+                    <h4>Lập trình Java từ A-Z</h4>
+                </div>                
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/Logo-Khoa-hoc-lap-trinh-Python.png">
+                    <h4>Lập trình Python chuyên nghiệp</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/c-logo.jpg">
+                    <h4>Lập trình cơ bản</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/NJ-logo.jpg">
+                    <h4>Lập trình Node .js</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/Automation-Testing-Logo.png">
+                    <h4>Automation Testing</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>           
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/PR-logo.jpg">
+                    <h4>Lập trình chuyên nghiệp</h4>
+                </div>                            
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>  
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/FE-logo-1.jpg">
+                    <h4>Lập tình viên Front End</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>  
+        <div class="course row_flex">
+            <div class="time row_flex">
+                <div>
+                    <h5>KHAI GIẢNG</h5>
+                    <P>17-06-2023</P>
+                </div>
+                <div>
+                    <h5>LỊCH HỌC</h5>
+                    <P>TỐI: 3-5-7</P>
+                </div>
+            </div>
+            <div class="lop row_flex">
+                <div class="block_title">
+                    <img src="/PHP-logo-1.jpg">
+                    <h4>Lập trình web với PHP & Laravel</h4>
+                </div>
+                <button type="button" value="button">Đăng ký học</button>
+            </div>
+        </div>   
+</body>
+</html>
